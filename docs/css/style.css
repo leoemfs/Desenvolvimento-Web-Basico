@@ -1,9 +1,6 @@
 a {
     text-decoration: none;
 }
-/*p {
-    font-family: "Lucida Console", "Courier New", monospace;
-  }*/
 .curriculo-body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 3rem;
@@ -13,13 +10,10 @@ a {
     border-bottom: double 1rem rgb(100, 100, 62);
     font-size: 3em;
 }
-
 .autorprof{
     color: rgb(2, 28, 12);
     font-size: 2rem;
-    
 }
-
 .description{
     color: #000000;
 }
