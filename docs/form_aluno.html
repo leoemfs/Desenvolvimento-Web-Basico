@@ -10,9 +10,7 @@
     <title>Formulário de Média</title>
 </head>
 <body>
-    <!--container da paina toda-->
     <div class="container">
-        <!--menu padrao de todas as pages-->
         <div class="row mt-3">
             <div class="card col-md-2 bg-dark text-white text-center">
                 <a href="form_selecao.html" class="text-decoration-none text-white"><h2 class="h2">ATV<br>1</h2></a>
@@ -29,30 +27,24 @@
                 </div>
             </div>
         </div>
-        <!--container do conteudo da atividade-->
         <div class="container-fluid">
-            <!--titulo da atividade-->
+
             <div class="row mt-3 d-flex justify-content-center">
                 <div class="card col-md-8 text-center">
                     <h4 class="h4 mt-1">Média do aluno</h4>
                 </div>
             </div>
-
-            <!--Formulario com nome, nota1, nota2, nota3, nota4 e resultado-->
             <form class="row card mt-3 mb-3">
-                <!--col titulo só pra centralizar -->
                 <div class="col-md text-center mt-3">
-                    <p class="">Digite as notas do seu aluno, calcule a sua média e veja a situação do mesmo.</p>
-                    <p class="">Média maior que: 6,00 "Aprovado" / Média entre: 2,1 - 5,9 "Recuperação" / Média menor que: 2,00 "Reprovado"</p>
+                    <h5>Digite as notas do seu aluno, calcule a sua média e veja a situação do mesmo.</h5>                 
+                    <p>Média maior que: 6,00 "Aprovado" / Média entre: 2,1 - 5,9 "Recuperação" / Média menor que: 2,00 "Reprovado"</p>
                 </div>
-                <!--row 1-->
                 <div class="form-row d-flex mb-3">
                     <div class="form-group col-md">
                         <label for="nome">Digite o nome do aluno</label>
                         <input type="text" class="form-control" id="nome" placeholder="Nome" name="nome">
                     </div>
                 </div>
-                <!--row 2-->
                 <div class="form-row d-flex mb-3">
                     <div class="form-group col-md-6">
                         <label for="nota1">Digite a 1° nota:</label>
@@ -63,7 +55,6 @@
                         <input type="number" class="form-control" id="nota2" placeholder="2° nota" name="nota2">
                     </div>
                 </div>
-                <!--row 3-->
                 <div class="form-row d-flex">
                     <div class="form-group col-md-6">
                         <label for="nota3">Digite a 3° nota:</label>
@@ -74,10 +65,9 @@
                         <input type="number" class="form-control" id="nota4" placeholder="4° nota" name="nota4">
                     </div>
                 </div>
-                <!--row 4-->
                 <div class="form-row d-flex mb-3 mt-3">
                     <div class="form-group col-md-6 d-flex justify-content-center">
-                        <button class="btn btn-primary" onclick="calcularMedia()">Calcular média</button>
+                        <button type="button" class="btn btn-primary" onclick="calcularMedia()">Calcular média</button>
                     </div>
                     <div class="card form-group col-md-6 resultado text-white text-center" id="resultado">
                         <p class="text-dark">Resultado</p>
