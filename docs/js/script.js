@@ -44,3 +44,50 @@ function calcularMedia(){
 
     resultado.innerHTML = "Nome: " + nome + " Média: " + media.toFixed(2) + " Situação: " + situacao;
 }
+function enviarPesquisa() {
+    let elemento = document.getElementsByName('cat');
+    let checkBoxes = document.querySelectorAll('input[type="checkbox"]:checked');
+    let text = " Afinidades: ";
+    for (let i = 0; i < elemento.length; i++) {
+      if (elemento[i].checked) {
+        document.getElementById('resultPesquisa').innerHTML = "Categoria selecionada: " + elemento[i].value;
+      }
+    }
+    for (let i = 0; i < checkBoxes.length; i++) {
+      text = text + checkBoxes[i].value + ", ";
+    }
+    let resultPesquisa = document.getElementById('resultPesquisa');
+    resultPesquisa.innerHTML = document.getElementById('resultPesquisa').innerHTML + text;
+
+    mudarCor();
+  }
+
+  function mudarCor() {
+    let categoria = document.querySelector('input[name="cat"]:checked').value;
+    let afinidades = document.querySelectorAll('input[type="checkbox"]:checked');
+    let afinidadesArray = [];
+    afinidades.forEach(function(afinidade) {
+      afinidadesArray.push(afinidade.value);
+    });
+  
+    let cor = "";
+    if (categoria == "Front-End" && afinidadesArray.includes("HTML+CSS+JAVASCRIPT")) {
+      cor = "lightblue";
+    }else if(categoria == "Front-End" && afinidadesArray.includes("Design")) {
+        cor = "gray";
+    }else if (categoria == "Back-End" && afinidadesArray.includes("Java POO")) {
+      cor = "lightgreen";
+    }else if (categoria == "Back-End" && afinidadesArray.includes("Logica de Programação")) {
+        cor = "green";
+    }else if (categoria == "Full-Stack" && afinidadesArray.includes("HTML+CSS+JAVASCRIPT") && afinidadesArray.includes("Java POO")) {
+      cor = "lightpink";
+    }else if (categoria == "Full-Stack" && afinidadesArray.includes("HTML+CSS+JAVASCRIPT")) {
+        cor = "yellow";
+    }else if (categoria == "Full-Stack" && afinidadesArray.includes("Logica de Programação")) {
+        cor = "lightpink";
+    } else {
+      cor = "white";
+    }
+    document.querySelector('#bgPesquisa').style.backgroundColor = cor;
+  }
+  
