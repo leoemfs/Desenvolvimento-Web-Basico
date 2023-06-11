@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-5.3.0-alpha3-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <script src="js/script.js"></script>
+    <title>Prova 1</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="row text-center card mt-3">
+            <h1 class="title">Adivinhe o texto</h1>
+        </div>
+
+        <div class="row border-radius">
+
+            <div class="col-md-6">
+                <p>Digite quatro palavras e tente adivinhar quais são as palavras
+                    escolhidas pelo desenvolvedor.
+                </p>
+            </div>
+            <div class="col-md-6 mt-3">
+                <div class=" mb-3">
+                    <label for="input">Plavara 1</label>
+                    <input type="text" value="" id="p1">
+                </div>
+
+                <div class=" mb-3">
+                    <label for="input">Plavara 2</label>
+                    <input type="text" value="" id="p2">
+                </div>
+
+                <div class=" mb-3">
+                    <label for="input">Plavara 3</label>
+                    <input type="text" value="" id="p3">
+                </div>
+
+                <div class=" mb-3">
+                    <label for="input">Plavara 4</label>
+                    <input type="text" value="" id="p4">
+                </div>
+
+                <div class=" mb-3">
+                    <input onclick="enviarResposta()" type="submit" value="Veja se você acertou!">
+                </div>
+            </div>
+            <div class="row card">
+                <h1>Confira o resultado ou veja uma dica:</h1>
+                <br>
+                <p>
+                    Dica: <span id="dica">???</span>
+                    <br>
+                    Resultado: <span id="resultado">???</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
