@@ -3,6 +3,5 @@ Repositorio criado para armaznar códigos de aula e de atividades desenvolvidos 
 
 # HTML+CSS
 # JavaScript
-# Bootstrp
+# Bootstarp
 # API com NODE.JS
-# REST API
